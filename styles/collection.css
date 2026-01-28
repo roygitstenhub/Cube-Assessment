@@ -1,0 +1,313 @@
+ section {
+            padding: 80px 0;
+        }
+
+        .collection-section {
+            background: #fafafa;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
+        .section-title {
+            font-size: 22px;
+            font-weight: 600;
+            color: #1a1a1a;
+            letter-spacing: -0.5px;
+        }
+
+        .section-subtitle {
+            font-size: 16px;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .collection-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: start;
+        }
+
+        .accordion-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 80px;
+        }
+
+        .accordion-item {
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            overflow: hidden;
+            background: #fff;
+            transition: all 0.3s ease;
+        }
+
+        .accordion-item.active {
+           border-color: #28a745;
+        }
+
+        .accordion-header {
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            background: #fff;
+            transition: all 0.3s ease;
+        }
+
+        .accordion-header:hover {
+            background: #f9f9f9;
+        }
+
+        .accordion-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+
+        .accordion-icon {
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #000;
+            font-size: 18px;
+            transition: transform 0.3s ease;
+        }
+
+        .accordion-item.active .accordion-icon i {
+            transform: rotate(45deg);
+        }
+
+        .accordion-content {
+            padding: 0 30px;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .accordion-item.active .accordion-content {
+            padding-bottom: 30px;
+            max-height: 300px;
+        }
+
+        .accordion-text {
+            color: #666;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .accordion-features {
+            list-style: none;
+            padding: 0;
+            margin-top: 15px;
+        }
+
+        .accordion-features li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 15px;
+            color: #666;
+        }
+
+        .accordion-features li i {
+            color: #28a745;
+            margin-right: 10px;
+            font-size: 14px;
+        }
+
+        .image-display {
+            position: relative;
+            height: 500px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            background: linear-gradient(135deg, #f5f0e6 0%, #e8e2d5 100%);
+            background-image: url(../assets/images/our-collection.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .image-content {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .collection-icon {
+            font-size: 80px;
+            color: #b8860b;
+            margin-bottom: 30px;
+        }
+
+        .image-title {
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #1a1a1a;
+        }
+
+        .image-description {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 30px;
+            max-width: 400px;
+        }
+
+        .explore-btn {
+            background: #b8860b;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .explore-btn:hover {
+            background: #a6790a;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(184, 134, 11, 0.2);
+        }
+
+        .floating-element {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: rgba(184, 134, 11, 0.1);
+            z-index: 0;
+        }
+
+        .floating-element-1 {
+            top: 20%;
+            left: 10%;
+            width: 80px;
+            height: 80px;
+        }
+
+        .floating-element-2 {
+            bottom: 15%;
+            right: 10%;
+            width: 120px;
+            height: 120px;
+            background: rgba(40, 167, 69, 0.1);
+        }
+
+        @media (max-width: 992px) {
+            .collection-grid {
+                gap: 40px;
+            }
+
+            .image-display {
+                height: 500px;
+            }
+
+            .accordion-container {
+                margin-top: 60px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .collection-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .section-header {
+                margin-bottom: 40px;
+            }
+
+            .section-title {
+                font-size: 28px;
+            }
+
+            .image-display {
+                height: 400px;
+                order: -1;
+            }
+
+            .accordion-container {
+                margin-top: 0;
+            }
+
+            .accordion-header {
+                padding: 20px 25px;
+            }
+
+            .accordion-content {
+                padding: 0 25px;
+            }
+
+            .accordion-item.active .accordion-content {
+                padding-bottom: 25px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            section {
+                padding: 60px 0;
+            }
+
+            .container {
+                padding: 0 15px;
+            }
+
+            .section-title {
+                font-size: 24px;
+            }
+
+            .accordion-title {
+                font-size: 18px;
+            }
+
+            .accordion-header {
+                padding: 18px 20px;
+            }
+
+            .accordion-content {
+                padding: 0 20px;
+            }
+
+            .accordion-item.active .accordion-content {
+                padding-bottom: 20px;
+            }
+
+            .image-display {
+                height: 350px;
+            }
+
+            .image-title {
+                font-size: 24px;
+            }
+
+            .collection-icon {
+                font-size: 60px;
+            }
+
+            .image-description {
+                font-size: 16px;
+            }
+        }

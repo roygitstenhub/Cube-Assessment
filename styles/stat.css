@@ -1,0 +1,151 @@
+
+        .stats-section {
+           background: linear-gradient(to bottom ,#033B1C , #025C2B);
+            color: #fff;
+        }
+
+    
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+        }
+
+        .stat-item-box{
+            text-align: center;
+            padding: 30px;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .stat-num {
+            font-size: 48px;
+            font-weight: 700;
+            color: #fff !important;
+            margin-bottom: 15px;
+            line-height: 1;
+        }
+
+        .stat-text {
+            font-size: 12px;
+            line-height: 1.5;
+        }
+
+        .stat-icon {
+            width: 60px;
+            height: 60px;
+            background: rgba(184, 134, 11, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            color: #b8860b;
+            font-size: 24px;
+        }
+
+        .stat-progress {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 20px;
+        }
+
+        .progress-circle {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        .progress-bg {
+            fill: none;
+            stroke: #f0f0f0;
+            stroke-width: 8;
+        }
+
+        .progress-value {
+            fill: none;
+            stroke: #b8860b;
+            stroke-width: 8;
+            stroke-linecap: round;
+            transform: rotate(-90deg);
+            transform-origin: 50% 50%;
+        }
+
+        .progress-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            font-weight: 700;
+            color: #b8860b;
+        }
+
+        .stat-item.style-2 {
+            background: transparent;
+            border: 2px solid #f0f0f0;
+        }
+
+        .stat-item.style-2:hover {
+            border-color: #b8860b;
+            background: rgba(184, 134, 11, 0.02);
+        }
+
+        @media (max-width: 992px) {
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 25px;
+            }
+            
+            .section-header {
+                margin-bottom: 50px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            section {
+                padding: 60px 0;
+            }
+            
+            .section-title {
+                font-size: 28px;
+            }
+            
+            .stat-num {
+                font-size: 42px;
+            }
+            
+            .stat-text {
+                font-size: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 15px;
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .section-title {
+                font-size: 24px;
+            }
+            
+            .stat-item-box{
+                padding: 25px 20px;
+            }
+            
+            .stat-num {
+                font-size: 36px;
+            }
+            
+            .stat-icon {
+                width: 50px;
+                height: 50px;
+                font-size: 20px;
+            }
+        }

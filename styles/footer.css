@@ -1,0 +1,211 @@
+ footer {
+            padding: 60px 0 30px 0;
+            background-color: #032E15;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .footer-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+        .footer-brand {
+            flex: 0 0 auto;
+        }
+
+        .footer-logo {
+            font-size: 28px;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 30px;
+            letter-spacing: 1px;
+        }
+
+        .footer-links-container {
+            flex: 1;
+            display: flex;
+            justify-content: space-between;
+            max-width: 400px;
+        }
+
+        .footer-links-group {
+            flex: 1;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 8px;
+        }
+
+        .footer-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 15px;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: #b8860b;
+        }
+
+        .footer-newsletter {
+            flex: 0 0 auto;
+            max-width: 400px;
+        }
+
+        .newsletter-text {
+            font-size: 14px;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        .newsletter-form {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .email-input {
+            flex: 1;
+            padding: 10px 12px;
+            border: 1px solid #999;
+            border-radius: 4px;
+            font-size: 14px;
+            color: #fff;
+            background:transparent;
+            min-width: 190px;
+        }
+
+        .email-input:focus {
+            outline: none;
+            border-color: #fff;
+        }
+
+        .subscribe-btn {
+            background: #653b08;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+
+        .subscribe-btn:hover {
+            background: #b8860b;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-icon {
+            color: #666;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        .social-icon:hover {
+            color: #b8860b;
+        }
+
+        .footer-bottom {
+            padding-top: 30px;
+            border-top: 1px solid #f0f0f0;
+        }
+
+        .privacy-text {
+            font-size: 12px;
+            color: #999;
+            line-height: 1.5;
+        }
+
+        @media (max-width: 992px) {
+            .footer-top {
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            .footer-links-container {
+                max-width: 100%;
+                justify-content: flex-start;
+                gap: 40px;
+            }
+
+            .footer-newsletter {
+                max-width: 100%;
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            footer {
+                padding: 40px 0 20px 0;
+            }
+
+            .footer-links-container {
+                flex-wrap: wrap;
+                gap: 30px;
+            }
+
+            .footer-links-group {
+                flex: 0 0 calc(33.333% - 20px);
+            }
+
+            .newsletter-form {
+                flex-direction: column;
+            }
+
+            .email-input,
+            .subscribe-btn {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 15px;
+            }
+
+            footer {
+                padding: 30px 0 15px 0;
+            }
+
+            .footer-logo {
+                font-size: 24px;
+            }
+
+            .footer-links a {
+                font-size: 14px;
+            }
+
+            .newsletter-text {
+                font-size: 13px;
+            }
+
+            .privacy-text {
+                font-size: 11px;
+            }
+        }
+
+        .fab{
+            margin-right: 8px;
+        }
